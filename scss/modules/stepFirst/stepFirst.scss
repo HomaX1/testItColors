@@ -1,0 +1,211 @@
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $NILEBLUE;
+}
+
+.wrap {
+  width: 1204px;
+  background-color: $GALLERY;
+  box-shadow: 0 4px 40px 20px rgba(0,0,0,0.5);
+
+  &__title {
+    font-weight: 500;
+    font-size: 24px;
+    color: $TUNDORA;
+    margin-left: 50px;
+    margin-top: 25px;
+  }
+}
+
+.check-in {
+  background-color: $WHITE;
+  margin: 25px 30px 30px;
+  padding: 15px 15px;
+  box-shadow: 0 2px 2px 0 rgba(197,199,199,0.7);
+}
+
+.container_width {
+  width: auto;
+}
+
+.tabs {
+  height: 50px;
+  background-color: $DODGERBLUE;
+  line-height: 50px;
+  list-style: none;
+  counter-reset: myCounter;
+  margin-bottom: 50px;
+}
+
+.tabs-item {
+  position: relative;
+  padding: 0;
+  left: -40px;
+  cursor: pointer;
+
+  &::after {
+    counter-increment: myCounter;
+    content:counter(myCounter);
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: 2px solid $WHITE;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 12px;
+    line-height: 32px;
+    font-weight: 700;
+    font-size: 19px;
+    color: $WHITE;
+  }
+
+  &:hover, &:active {
+    background-color: $PICTONBLUE;
+  }
+
+  &__text {
+    padding-left: 62px;
+    font-weight: 500;
+    font-size: 18px;
+    color: $WHITE;
+    border-right: 1px solid $MARINER;
+  }
+}
+
+.step-first {
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.step {
+  &__title {
+    font-weight: 400;
+    font-size: 22px;
+    color: $EMPEROR;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 16px;
+    color: $DOVEGRAY;
+    margin-bottom: 50px;
+  }
+
+  &__line {
+    width: 1040px;
+    height: 1px;
+    background-color: $SILVERSAND;
+    box-shadow: 0 0 1px 0 rgba(197,199,199,0.7);
+  }
+}
+
+.user {
+  margin-top: 40px;
+
+  &__title {
+    display: none;
+    font-weight: 400;
+    font-size: 14px;
+    color: $SILVERCHALICE;
+  }
+
+  &__input-text {
+    width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    color: $SILVERCHALICE;
+    border: none;
+    border-bottom: 1px solid $SILVERSAND;
+
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid $SCIENCEBLUE;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 80px;
+  }
+}
+
+.user-email {
+  padding: 0;
+}
+
+.type-wrap {
+  margin-top: 40px;
+
+  &__title {
+    font-weight: 400;
+    font-size: 18px;
+    color: $SILVERCHALICE;
+    border-bottom: 1px solid $SILVERSAND;
+    cursor: pointer;
+  }
+}
+
+.type {
+  list-style-type: none;
+  width: 325px;
+  box-shadow: 3px 3px 25px -2px rgba(107,105,105,0.7);
+  padding: 0;
+  position: absolute;
+  top: -15px;
+  background-color: $WHITE;
+
+  &__item {
+    font-weight: 400;
+    font-size: 18px;
+    color: $DOVEGRAY;
+    padding: 15px 0 10px 20px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $GALLERY;
+    }
+  }
+}
+
+.direction {
+  height: 50px;
+  line-height: 50px;
+  background-color: $GALLERY;
+}
+
+.direction-left, .direction-right {
+  cursor: pointer;
+}
+
+.direction-left {
+  &__text {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    color: $DUSTYGRAY;
+  }
+}
+
+.direction-right {
+  text-align: right;
+
+  &__text {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    color: $DOVEGRAY;
+  }
+}
+
+.photo {
+  width: 245px;
+  height: 280px;
+  background-color: $SILVERCHALICE;
+  margin: 50px auto 0;
+}
+
