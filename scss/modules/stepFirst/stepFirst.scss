@@ -123,6 +123,10 @@ body {
     border: none;
     border-bottom: 1px solid $SILVERSAND;
 
+    &_padding {
+      padding-left: 32px;
+    }
+
     &:focus {
       outline: none;
       border-bottom: 1px solid $SCIENCEBLUE;
@@ -132,6 +136,13 @@ body {
   &:last-child {
     margin-bottom: 80px;
   }
+
+  &__icon {
+    font-size: 20px;
+    color: $SILVERCHALICE;
+    position: relative;
+    bottom: 25px;
+  }
 }
 
 .user-email {
@@ -139,7 +150,7 @@ body {
 }
 
 .type-wrap {
-  margin-top: 40px;
+  margin-top: 42px;
 
   &__title {
     font-weight: 400;
@@ -151,9 +162,10 @@ body {
 }
 
 .type {
+  display: none;
   list-style-type: none;
   width: 325px;
-  box-shadow: 3px 3px 25px -2px rgba(107,105,105,0.7);
+  box-shadow: 6px 6px 25px -2px rgba(107,105,105,0.7);
   padding: 0;
   position: absolute;
   top: -15px;
@@ -203,9 +215,42 @@ body {
 }
 
 .photo {
+  text-align: center;
   width: 245px;
   height: 280px;
-  background-color: $SILVERCHALICE;
+  border: 2px dashed $ALTO;
   margin: 50px auto 0;
+
+  &__icon {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: $GALLERY;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 14px;
+    color: $TUNDORA;
+    margin-bottom: 15px;
+  }
+
+  &__btn {
+    background-color: $DODGERBLUE;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 11px;
+    color: $WHITE;
+    border: none;
+    padding: 10px 20px;
+    box-shadow: 0 3px 20px -5px rgba(0,0,0,0.75);
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font-size: 13px;
+    font-style: italic;
+    color: $BOULDER;
+  }
 }
 
