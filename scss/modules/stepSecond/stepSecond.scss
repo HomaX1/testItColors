@@ -50,8 +50,12 @@
   transition: color 0.2s, background-color 0.2s;
 }
 
-.direction-left__text_bg, .direction-right__text_bg {
-  padding: 16px 45px;
+.direction-left__text_bg {
+  padding: 16px 30px 16px 45px;
+}
+
+.direction-right__text_bg {
+  padding: 16px 45px 16px 30px;
 }
 
 .direction-left__text_bg:hover, .direction-right__text_bg:hover,

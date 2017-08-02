@@ -9,12 +9,13 @@ $(function () {
         insideOption: $('.type')
     };
 
-    /*let inputActive = () => {
+    let inputActive = function () {
         ALLCONST.titleInput.hide();
-        ALLCONST.inputWrap.find('.user__title').fadeIn();
-        ALLCONST.input.attr('placeholder', '');
+        /*ALLCONST.input.attr('placeholder').show();*/
+        $(this).siblings('.user__title').fadeIn();
+        /*$(this).attr('placeholder', '');*/
     };
 
-    ALLCONST.input.click(inputActive);*/
+    ALLCONST.input.click(inputActive);
 
 });

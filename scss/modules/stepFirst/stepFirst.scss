@@ -112,13 +112,20 @@ body {
 }
 
 .user {
-  margin-top: 40px;
+  margin-top: 50px;
+  position: relative;
 
   &__title {
     display: none;
     font-weight: 400;
     font-size: 14px;
     color: $SILVERCHALICE;
+    position: absolute;
+    bottom: 32px;
+
+    &_bottom {
+      bottom: 57px;
+    }
   }
 
   &__input-text {
