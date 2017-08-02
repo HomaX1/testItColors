@@ -1,3 +1,7 @@
+/*.step-second {
+  display: none;
+}*/
+
 .location {
   border-bottom: 1px solid $SILVERSAND;
   padding: 0 0 20px;
@@ -34,7 +38,7 @@
 
 .direction {
   &_bg {
-    display: block;
+    display: none;
     background-color: $WHITE;
   }
 }

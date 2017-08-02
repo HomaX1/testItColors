@@ -36,17 +36,17 @@
                     <form class="col-md-8 info">
                         <div class="user">
                             <span class="user__title">Имя*</span>
-                            <input class="user__input-text" placeholder="Имя*">
+                            <input class="user__input-text" placeholder="Имя*" required>
                         </div>
                         <div class="user">
                             <span class="user__title">Фамилия*</span>
-                            <input class="user__input-text" placeholder="Фамилия*">
+                            <input class="user__input-text" placeholder="Фамилия*" required>
                         </div>
                         <div class="container container_width">
                             <div class="row">
                                 <div class="col-md-6 user user-email">
                                     <span class="user__title user__title_bottom">Email*</span>
-                                    <input class="user__input-text user__input-text_padding" placeholder="Email*">
+                                    <input class="user__input-text user__input-text_padding" type="email" placeholder="Email*" required>
                                     <i class="material-icons user__icon">email</i>
                                 </div>
                                 <div class="col-md-6 select-wrap">
@@ -63,7 +63,7 @@
                         </div>
                         <div class="user">
                             <span class="user__title">Название организации*</span>
-                            <input class="user__input-text" placeholder="Название организации*">
+                            <input class="user__input-text" placeholder="Название организации*" required>
                         </div>
                     </form>
                     <div class="col-md-4 info-photo">
@@ -135,6 +135,27 @@
             </div>
         </section>
 
+        <section class="step step-third">
+            <h2 class="step__title">Конфиденциальность данных</h2>
+            <p class="step__text">Если Вы хотите в полной мере воспользоваться нашим сайтом - вводите достоверные
+                данные.</p>
+            <div class="step__line"></div>
+            <div class="container container_width">
+                <div class="row">
+                    <form class="col-md-8 password-wrap">
+                        <div class="password">
+                            <input class="password__input" type="password" placeholder="Пароль" required>
+                        </div>
+                        <div class="password">
+                            <input class="password__input" type="password" placeholder="Повторить пароль" required>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <p class="success">Регистрация прошла успешно, в случае утери пароля, восстановление возможно по указанному Вами электронному адресу.</p>
+
         <section class="container container_width">
             <div class="row direction">
                 <div class="col-md-4 direction-left">
@@ -169,6 +190,7 @@
 </section>
 
 <script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/jquery-validation/dist/jquery.validate.js"></script>
 <script src="js/script.js"></script>
 
 </body>

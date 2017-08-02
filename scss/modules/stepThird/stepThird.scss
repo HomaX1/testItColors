@@ -1,0 +1,40 @@
+.step-third {
+  display: none;
+}
+
+.password-wrap {
+  padding: 0;
+}
+
+.password {
+  margin-top: 35px;
+
+  &__input {
+    width: 100%;
+    font-weight: 400;
+    font-size: 22px;
+    color: $EMPEROR;
+    border: none;
+    border-bottom: 1px solid $SILVERSAND;
+
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid $SCIENCEBLUE;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 70px;
+  }
+}
+
+.success {
+  display: none;
+  font-weight: 400;
+  font-size: 16px;
+  color: $WHITE;
+  background-color: $SUSHI;
+  border-radius: 5px;
+  padding: 15px 30px;
+  margin-bottom: 100px;
+}

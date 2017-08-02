@@ -1,6 +1,5 @@
 $(function () {
     'use strict';
-
     const ALLCONST = {
         inputWrap: $('.user'),
         input: $('.user__input-text'),
@@ -17,5 +16,5 @@ $(function () {
     };
 
     ALLCONST.input.click(inputActive);
-
+    $('form').validate();
 });

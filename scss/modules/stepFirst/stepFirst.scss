@@ -77,9 +77,9 @@ body {
   }
 }
 
-.step-first {
+/*.step-first {
   display: none;
-}
+}*/
 
 .step {
   margin-right: 25px;
@@ -163,7 +163,7 @@ body {
 }
 
 .select-wrap {
-  margin-top: 42px;
+  margin-top: 52px;
 
   &__title {
     font-weight: 400;
@@ -207,7 +207,7 @@ body {
 }
 
 .direction {
-  display: none;
+  /*display: none;*/
   height: 50px;
   line-height: 50px;
   background-color: $GALLERY;
