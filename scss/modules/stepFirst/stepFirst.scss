@@ -78,11 +78,13 @@ body {
 }
 
 .step-first {
-  margin-right: 25px;
-  margin-left: 25px;
+  display: none;
 }
 
 .step {
+  margin-right: 25px;
+  margin-left: 25px;
+
   &__title {
     font-weight: 400;
     font-size: 22px;
@@ -103,6 +105,10 @@ body {
     background-color: $SILVERSAND;
     box-shadow: 0 0 1px 0 rgba(197,199,199,0.7);
   }
+}
+
+.info {
+  padding: 0;
 }
 
 .user {
@@ -149,7 +155,7 @@ body {
   padding: 0;
 }
 
-.type-wrap {
+.select-wrap {
   margin-top: 42px;
 
   &__title {
@@ -159,9 +165,17 @@ body {
     border-bottom: 1px solid $SILVERSAND;
     cursor: pointer;
   }
+
+  &__icon {
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    color: $SILVERCHALICE;
+  }
 }
 
-.type {
+.select {
   display: none;
   list-style-type: none;
   width: 325px;
@@ -172,6 +186,7 @@ body {
   background-color: $WHITE;
 
   &__item {
+    text-transform: capitalize;
     font-weight: 400;
     font-size: 18px;
     color: $DOVEGRAY;
@@ -185,12 +200,13 @@ body {
 }
 
 .direction {
+  display: none;
   height: 50px;
   line-height: 50px;
   background-color: $GALLERY;
 }
 
-.direction-left, .direction-right {
+.direction-left__text, .direction-right__text {
   cursor: pointer;
 }
 
@@ -200,6 +216,16 @@ body {
     font-weight: 500;
     font-size: 14px;
     color: $DUSTYGRAY;
+    padding-left: 28px;
+  }
+
+  &__icon {
+    font-size: 25px;
+    color: $DUSTYGRAY;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    padding-left: 18px;
   }
 }
 
@@ -211,6 +237,16 @@ body {
     font-weight: 700;
     font-size: 14px;
     color: $DOVEGRAY;
+    padding-right: 28px;
+  }
+
+  &__icon {
+    font-size: 25px;
+    color: $DOVEGRAY;
+    position: absolute;
+    top: 12px;
+    right: 0;
+    padding-right: 18px;
   }
 }
 

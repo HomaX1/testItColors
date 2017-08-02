@@ -1,0 +1,62 @@
+.location {
+  border-bottom: 1px solid $SILVERSAND;
+  padding: 0 0 20px;
+  margin-top: 35px;
+  margin-bottom: 20px;
+
+  &__text {
+    font-weight: 400;
+    font-size: 22px;
+    color: $EMPEROR;
+    margin-right: 80px;
+  }
+}
+
+.on-off-switch {
+  display: inline-block;
+}
+
+.location-icon {
+  font-size: 30px;
+  color: $SILVERCHALICE;
+}
+
+.select-wrap {
+  &_margin {
+    margin-top: 35px;
+    margin-bottom: 200px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+}
+
+.direction {
+  &_bg {
+    display: block;
+    background-color: $WHITE;
+  }
+}
+
+.direction-left_padding, .direction-right_padding {
+  padding: 0;
+}
+
+.direction-left__text_bg, .direction-right__text_bg,
+.direction-left__icon_color, .direction-right__icon_color {
+  background-color: $DODGERBLUE;
+  color: $WHITE;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.direction-left__text_bg, .direction-right__text_bg {
+  padding: 16px 45px;
+}
+
+.direction-left__text_bg:hover, .direction-right__text_bg:hover,
+.direction-left__text_bg:hover .direction-left__icon_color,
+.direction-right__text_bg:hover .direction-right__icon_color {
+  background-color: $SOLITUDE;
+  color: $LOCHMARA;
+}

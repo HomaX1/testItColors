@@ -33,7 +33,7 @@
             <div class="step__line"></div>
             <div class="container container_width">
                 <div class="row">
-                    <div class="col-md-8 info">
+                    <form class="col-md-8 info">
                         <div class="user">
                             <span class="user__title">Имя*</span>
                             <input class="user__input-text" placeholder="Имя*">
@@ -49,13 +49,14 @@
                                     <input class="user__input-text user__input-text_padding" placeholder="Email*">
                                     <i class="material-icons user__icon">email</i>
                                 </div>
-                                <div class="col-md-6 type-wrap">
-                                    <p class="type-wrap__title">Тип пользователя</p>
-                                    <ul class="type">
-                                        <li class="type__item">Частное лицо</li>
-                                        <li class="type__item">Организация</li>
-                                        <li class="type__item">Волонтер</li>
-                                        <li class="type__item">Волонтерская группа</li>
+                                <div class="col-md-6 select-wrap">
+                                    <p class="select-wrap__title">Тип пользователя</p>
+                                    <i class="material-icons select-wrap__icon">arrow_drop_down</i>
+                                    <ul class="select">
+                                        <li class="select__item">Частное лицо</li>
+                                        <li class="select__item">Организация</li>
+                                        <li class="select__item">Волонтер</li>
+                                        <li class="select__item">Волонтерская группа</li>
                                     </ul>
                                 </div>
                             </div>
@@ -64,7 +65,7 @@
                             <span class="user__title">Название организации*</span>
                             <input class="user__input-text" placeholder="Название организации*">
                         </div>
-                    </div>
+                    </form>
                     <div class="col-md-4 info-photo">
                         <div class="photo">
                             <i class="material-icons photo__icon">add_a_photo</i>
@@ -76,18 +77,99 @@
                 </div>
             </div>
         </section>
-        <div class="container container_width">
-            <div class="row direction">
-                <div class="col-md-4 direction-left">
-                    <span class="direction-left__text">Назад</span>
-                </div>
-                <div class="col-md-4 col-md-offset-4 direction-right">
-                    <span class="direction-right__text">Продолжить</span>
+
+        <section class="step step-second">
+            <h2 class="step__title">Ваше местоположение</h2>
+            <p class="step__text">Если Вы хотите в полной мере воспользоваться нашим сайтом - вводите достоверные
+                данные.</p>
+            <div class="step__line"></div>
+            <div class="container container_width">
+                <div class="row">
+                    <div class="col-md-8 location">
+                        <span class="location__text">Определить автоматически</span>
+                        <div class="on-off-switch">
+                            <input type="checkbox" name="onoffswitch" class="on-off-switch-checkbox" id="onoffswitch1"
+                                   checked="">
+                            <label class="on-off-switch-label" for="onoffswitch1">
+                                <span class="on-off-switch-inner"></span><!--был тег div-->
+                                <span class="on-off-switch-switch"></span>
+                            </label>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+            <i class="material-icons location-icon">pin_drop</i>
+            <div class="container container_width">
+                <div class="row">
+                    <div class="col-md-3 select-wrap select-wrap_margin">
+                        <p class="select-wrap__title">Страна</p>
+                        <i class="material-icons select-wrap__icon select-wrap__icon_left">arrow_drop_down</i>
+                        <ul class="select">
+                            <li class="select__item">Andorra</li>
+                            <li class="select__item">United arab emirates</li>
+                            <li class="select__item">France</li>
+                            <li class="select__item">Belarus</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1 select-wrap select-wrap_margin">
+                        <p class="select-wrap__title">Область</p>
+                        <i class="material-icons select-wrap__icon select-wrap__icon_left">arrow_drop_down</i>
+                        <ul class="select">
+                            <li class="select__item">Canillo</li>
+                            <li class="select__item">Dubai</li>
+                            <li class="select__item">Ile-de-France</li>
+                            <li class="select__item">Hrodna</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1 select-wrap select-wrap_margin">
+                        <p class="select-wrap__title">Город</p>
+                        <i class="material-icons select-wrap__icon select-wrap__icon_left">arrow_drop_down</i>
+                        <ul class="select">
+                            <li class="select__item">Soldeu</li>
+                            <li class="select__item">Mirdif</li>
+                            <li class="select__item">Paris</li>
+                            <li class="select__item">Hrodna</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container container_width">
+            <div class="row direction">
+                <div class="col-md-4 direction-left">
+                        <span class="direction-left__text">
+                            <i class="material-icons direction-left__icon">keyboard_arrow_left</i>
+                            Назад</span>
+                </div>
+                <div class="col-md-4 col-md-offset-4 direction-right">
+                        <span class="direction-right__text">Продолжить
+                            <i class="material-icons direction-right__icon">keyboard_arrow_right</i>
+                        </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="container container_width">
+            <div class="row direction direction_bg">
+                <div class="col-md-4 direction-left direction-left_padding">
+                        <span class="direction-left__text direction-left__text_bg">
+                            <i class="material-icons direction-left__icon direction-left__icon_color">keyboard_arrow_left</i>
+                            Назад</span>
+                </div>
+                <div class="col-md-4 col-md-offset-4 direction-right direction-right_padding">
+                        <span class="direction-right__text direction-right__text_bg">Продолжить
+                            <i class="material-icons direction-right__icon direction-right__icon_color">keyboard_arrow_right</i>
+                        </span>
+                </div>
+            </div>
+        </section>
+
     </section>
 </section>
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
