@@ -35,18 +35,18 @@
                     <form class="col-md-8 info">
                         <div class="user">
                             <span class="user__title">Имя*</span>
-                            <input class="user__input-text" placeholder="Имя*" required>
+                            <input class="user__input user__input-text" placeholder="Имя*" required>
                         </div>
                         <div class="user">
                             <span class="user__title">Фамилия*</span>
-                            <input class="user__input-text" placeholder="Фамилия*" required>
+                            <input class="user__input user__input-text" placeholder="Фамилия*" required>
                         </div>
                         <div class="container container_width">
                             <div class="row">
                                 <div class="col-md-6 user user-email">
                                     <span class="user__title user__title_bottom">Email*</span>
                                     <i class="material-icons user__icon">email</i>
-                                    <input class="user__input-text user__input-text_padding" type="email" placeholder="Email*" required>
+                                    <input class="user__input user__input-text user__input-text_padding" type="email" placeholder="Email*" required>
                                 </div>
                                 <div class="col-md-6 select-wrap">
                                     <p class="select-wrap__title">Тип пользователя</p>
@@ -62,7 +62,7 @@
                         </div>
                         <div class="user">
                             <span class="user__title">Название организации*</span>
-                            <input class="user__input-text" placeholder="Название организации*" required>
+                            <input class="user__input user__input-text" placeholder="Название организации*" required>
                         </div>
                     </form>
                     <div class="col-md-4 info-photo">
@@ -87,12 +87,8 @@
                     <div class="col-md-8 location">
                         <span class="location__text">Определить автоматически</span>
                         <div class="on-off-switch">
-                            <input type="checkbox" name="onoffswitch" class="on-off-switch-checkbox" id="onoffswitch1"
-                                   checked="">
-                            <label class="on-off-switch-label" for="onoffswitch1">
-                                <span class="on-off-switch-inner"></span><!--был тег div-->
-                                <span class="on-off-switch-switch"></span>
-                            </label>
+                            <input type="checkbox" name="onoffswitch" class="on-off-switch-checkbox" id="my-on-off-switch" checked>
+                            <label class="on-off-switch-label" for="my-on-off-switch"></label>
                         </div>
                     </div>
                 </div>
@@ -141,12 +137,12 @@
             <div class="step__line"></div>
             <div class="container container_width">
                 <div class="row">
-                    <form class="col-md-8 password-wrap">
+                    <form class="col-md-8 info password-wrap">
                         <div class="password">
-                            <input class="password__input" type="password" placeholder="Пароль" required>
+                            <input class="user__input password__input" type="password" placeholder="Пароль" required>
                         </div>
                         <div class="password">
-                            <input class="password__input" type="password" placeholder="Повторить пароль" required>
+                            <input class="user__input password__input" type="password" placeholder="Повторить пароль" required>
                         </div>
                     </form>
                 </div>
