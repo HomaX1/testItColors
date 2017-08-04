@@ -9,7 +9,7 @@ body {
 .wrap {
   width: 1204px;
   background-color: $GALLERY;
-  box-shadow: 0 4px 40px 20px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 40px 20px rgba(0, 0, 0, 0.5);
 
   &__title {
     font-weight: 500;
@@ -24,7 +24,7 @@ body {
   background-color: $WHITE;
   margin: 25px 30px 30px;
   padding: 15px 15px;
-  box-shadow: 0 2px 2px 0 rgba(197,199,199,0.7);
+  box-shadow: 0 2px 2px 0 rgba(197, 199, 199, 0.7);
 }
 
 .container_width {
@@ -48,7 +48,7 @@ body {
 
   &::after {
     counter-increment: myCounter;
-    content:counter(myCounter);
+    content: counter(myCounter);
     width: 35px;
     height: 35px;
     text-align: center;
@@ -64,7 +64,7 @@ body {
     color: $WHITE;
   }
 
-  &:hover, &:active {
+  &:hover, &:active, &_active {
     background-color: $PICTONBLUE;
   }
 
@@ -77,11 +77,8 @@ body {
   }
 }
 
-/*.step-first {
-  display: none;
-}*/
-
 .step {
+  display: none;
   margin-right: 25px;
   margin-left: 25px;
 
@@ -103,7 +100,7 @@ body {
     width: 1040px;
     height: 1px;
     background-color: $SILVERSAND;
-    box-shadow: 0 0 1px 0 rgba(197,199,199,0.7);
+    box-shadow: 0 0 1px 0 rgba(197, 199, 199, 0.7);
   }
 }
 
@@ -124,7 +121,7 @@ body {
     bottom: 32px;
 
     &_bottom {
-      bottom: 57px;
+      top: 0;
     }
   }
 
@@ -154,12 +151,13 @@ body {
     font-size: 20px;
     color: $SILVERCHALICE;
     position: relative;
-    bottom: 25px;
+    top: 28px;
   }
 }
 
 .user-email {
   padding: 0;
+  margin-top: 25px;
 }
 
 .select-wrap {
@@ -186,10 +184,11 @@ body {
   display: none;
   list-style-type: none;
   width: 325px;
-  box-shadow: 6px 6px 25px -2px rgba(107,105,105,0.7);
+  box-shadow: 6px 6px 25px -2px rgba(107, 105, 105, 0.7);
   padding: 0;
   position: absolute;
   top: -15px;
+  z-index: 2;
   background-color: $WHITE;
 
   &__item {
@@ -207,14 +206,43 @@ body {
 }
 
 .direction {
-  /*display: none;*/
   height: 50px;
   line-height: 50px;
   background-color: $GALLERY;
+
+  &.active {
+    background-color: $WHITE;
+
+    .direction-left__text, .direction-right__text,
+    .direction-left__icon, .direction-right__icon{
+      background-color: $DODGERBLUE;
+      color: $WHITE;
+      transition: color 0.2s, background-color 0.2s;
+    }
+
+    .direction-left__text:hover, .direction-right__text:hover,
+    .direction-left__text:hover .direction-left__icon,
+    .direction-right__text:hover .direction-right__icon {
+      background-color: $SOLITUDE;
+      color: $LOCHMARA;
+    }
+
+    .direction-left__text {
+      padding: 16px 30px 16px 45px;
+    }
+
+    .direction-right__text {
+      padding: 16px 45px 16px 30px;
+    }
+  }
 }
 
 .direction-left__text, .direction-right__text {
   cursor: pointer;
+}
+
+.direction-left, .direction-right {
+  padding: 0;
 }
 
 .direction-left {
@@ -223,7 +251,7 @@ body {
     font-weight: 500;
     font-size: 14px;
     color: $DUSTYGRAY;
-    padding-left: 28px;
+    padding: 16px 30px 16px 45px;
   }
 
   &__icon {
@@ -238,13 +266,14 @@ body {
 
 .direction-right {
   text-align: right;
+  padding: 0;
 
   &__text {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
     color: $DOVEGRAY;
-    padding-right: 28px;
+    padding: 16px 45px 16px 30px;
   }
 
   &__icon {
@@ -286,8 +315,17 @@ body {
     color: $WHITE;
     border: none;
     padding: 10px 20px;
-    box-shadow: 0 3px 20px -5px rgba(0,0,0,0.75);
+    box-shadow: 0 3px 20px -5px rgba(0, 0, 0, 0.75);
     margin-bottom: 15px;
+    transition: background-color 0.2s;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      background-color: #51adf6;
+    }
   }
 
   &__text {
@@ -295,5 +333,9 @@ body {
     font-style: italic;
     color: $BOULDER;
   }
+}
+
+.step-active {
+  display: block;
 }
 

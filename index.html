@@ -14,19 +14,18 @@
     <section class="check-in">
         <div class="container container_width">
             <ol class="row tabs">
-                <li class="col-md-3 tabs-item">
+                <li id="tab-first" class="col-md-3 tabs-item tabs-item_active">
                     <p class="tabs-item__text">Общая информация</p>
                 </li>
-                <li class="col-md-3 tabs-item">
-
+                <li id="tab-second" class="col-md-3 tabs-item">
                     <p class="tabs-item__text">Местоположение</p>
                 </li>
-                <li class="col-md-3 tabs-item">
+                <li id="tab-third" class="col-md-3 tabs-item">
                     <p class="tabs-item__text">Конфиденциальность</p>
                 </li>
             </ol>
         </div>
-        <section class="step step-first">
+        <section id="step-first" class="step step-active">
             <h2 class="step__title">Общая информация</h2>
             <p class="step__text">Если Вы хотите в полной мере воспользоваться нашим сайтом - вводите достоверные
                 данные.</p>
@@ -46,8 +45,8 @@
                             <div class="row">
                                 <div class="col-md-6 user user-email">
                                     <span class="user__title user__title_bottom">Email*</span>
-                                    <input class="user__input-text user__input-text_padding" type="email" placeholder="Email*" required>
                                     <i class="material-icons user__icon">email</i>
+                                    <input class="user__input-text user__input-text_padding" type="email" placeholder="Email*" required>
                                 </div>
                                 <div class="col-md-6 select-wrap">
                                     <p class="select-wrap__title">Тип пользователя</p>
@@ -78,7 +77,7 @@
             </div>
         </section>
 
-        <section class="step step-second">
+        <section id="step-second" class="step">
             <h2 class="step__title">Ваше местоположение</h2>
             <p class="step__text">Если Вы хотите в полной мере воспользоваться нашим сайтом - вводите достоверные
                 данные.</p>
@@ -135,7 +134,7 @@
             </div>
         </section>
 
-        <section class="step step-third">
+        <section id="step-third" class="step">
             <h2 class="step__title">Конфиденциальность данных</h2>
             <p class="step__text">Если Вы хотите в полной мере воспользоваться нашим сайтом - вводите достоверные
                 данные.</p>
@@ -152,12 +151,11 @@
                     </form>
                 </div>
             </div>
+            <p class="success">Регистрация прошла успешно, в случае утери пароля, восстановление возможно по указанному Вами электронному адресу.</p>
         </section>
 
-        <p class="success">Регистрация прошла успешно, в случае утери пароля, восстановление возможно по указанному Вами электронному адресу.</p>
-
         <section class="container container_width">
-            <div class="row direction">
+            <div id="direction" class="row direction">
                 <div class="col-md-4 direction-left">
                         <span class="direction-left__text">
                             <i class="material-icons direction-left__icon">keyboard_arrow_left</i>
@@ -166,21 +164,6 @@
                 <div class="col-md-4 col-md-offset-4 direction-right">
                         <span class="direction-right__text">Продолжить
                             <i class="material-icons direction-right__icon">keyboard_arrow_right</i>
-                        </span>
-                </div>
-            </div>
-        </section>
-
-        <section class="container container_width">
-            <div class="row direction direction_bg">
-                <div class="col-md-4 direction-left direction-left_padding">
-                        <span class="direction-left__text direction-left__text_bg">
-                            <i class="material-icons direction-left__icon direction-left__icon_color">keyboard_arrow_left</i>
-                            Назад</span>
-                </div>
-                <div class="col-md-4 col-md-offset-4 direction-right direction-right_padding">
-                        <span class="direction-right__text direction-right__text_bg">Продолжить
-                            <i class="material-icons direction-right__icon direction-right__icon_color">keyboard_arrow_right</i>
                         </span>
                 </div>
             </div>

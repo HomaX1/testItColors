@@ -1,7 +1,3 @@
-/*.step-second {
-  display: none;
-}*/
-
 .location {
   border-bottom: 1px solid $SILVERSAND;
   padding: 0 0 20px;
@@ -34,37 +30,4 @@
       padding-left: 0;
     }
   }
-}
-
-.direction {
-  &_bg {
-    display: none;
-    background-color: $WHITE;
-  }
-}
-
-.direction-left_padding, .direction-right_padding {
-  padding: 0;
-}
-
-.direction-left__text_bg, .direction-right__text_bg,
-.direction-left__icon_color, .direction-right__icon_color {
-  background-color: $DODGERBLUE;
-  color: $WHITE;
-  transition: color 0.2s, background-color 0.2s;
-}
-
-.direction-left__text_bg {
-  padding: 16px 30px 16px 45px;
-}
-
-.direction-right__text_bg {
-  padding: 16px 45px 16px 30px;
-}
-
-.direction-left__text_bg:hover, .direction-right__text_bg:hover,
-.direction-left__text_bg:hover .direction-left__icon_color,
-.direction-right__text_bg:hover .direction-right__icon_color {
-  background-color: $SOLITUDE;
-  color: $LOCHMARA;
 }
